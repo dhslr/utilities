@@ -1,0 +1,17 @@
+{
+  "name": "pkg_transfer",
+  "version": "0.0.2",
+  "description": "just a utility module for data transfer with restify",
+  "main": "pkg_transfer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "dependencies" : {
+	  "restify" : ">=2.4.1"
+  },
+  "engine" : "node >= 0.8.0",
+  "private": true,
+  "license": "BSD"
+}

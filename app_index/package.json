@@ -1,0 +1,16 @@
+{
+  "name": "app_index",
+  "version": "0.0.1",
+  "description": "A small tool that indexes package.json files in a dir and its sub dirs.",
+  "main": "app_index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "private": true,
+  "license": "BSD"
+}

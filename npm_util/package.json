@@ -1,0 +1,20 @@
+{
+  "name": "npm_util",
+  "version": "0.0.1",
+  "description": "A small utility class that wraps npm",
+  "main": "npm_util.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+	"test": "node tests/test.js"
+  },
+  "dependencies" : {
+	  "npm" : ">=1.2.18"
+  },
+  "engine" : "node >= 0.8.0",
+  "repository": "",
+  "author": "",
+  "private": "true",
+  "license": "BSD"
+}
