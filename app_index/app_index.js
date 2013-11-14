@@ -49,7 +49,7 @@
 	 **/
 	exports.index = function (directory) {
 		var files,
-			filtered;
+				filtered;
 
 		directory = directory || app_dir;
 		app_dir = directory;
@@ -67,12 +67,15 @@
 		for (var i = 0; i < filtered.length; i++) {
 			var data = fs.readFileSync(filtered[i]),
 				obj  = JSON.parse(data.toString());
-			apps.push({
-				name: obj.name, 
-				dir: path.dirname(filtered[i]),
-				version: obj.version,
-				main_path: path.join(path.dirname(filtered[i]), obj.main)
-			});
+			if (typeof obj.main !== "undefined" && 
+					typeof obj.name !== "undefined") {
+				apps.push({
+					name: obj.name, 
+					dir: path.dirname(filtered[i]),
+					version: obj.version,
+					main_path: path.join(path.dirname(filtered[i]), obj.main)
+				});
+			}
 		}
 		return apps;
 	};
