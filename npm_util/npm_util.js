@@ -7,7 +7,7 @@
 		npm_helper,
 		conf = {
 			json: true, 
-			depth: 1,
+			depth: 2,
 			prefix: process.cwd(),
 			logLevel: "verbose",
 			global: true

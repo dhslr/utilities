@@ -4,7 +4,7 @@
 		path = require("path"),
 		conf = {
 			json: true,
-			depth: 1,
+			depth: 2,
 			global: true,
 			logLevel: "silent",
 		};
