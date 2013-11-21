@@ -22,7 +22,6 @@
 				offset = 0;
 			if (Number.isNaN(len)) {
 				if (typeof cb === "function") {
-					console.log("no con len");
 					cb(restify.InvalidHeaderError("No Content-Length set!"),
 							null, res, next);
 				}
