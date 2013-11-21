@@ -31,6 +31,7 @@
 							main: val.main,
 							rule: val.rule,
 							scripts: val.scripts,
+							from: val._from,
 							version: val.version
 						};
 					}
