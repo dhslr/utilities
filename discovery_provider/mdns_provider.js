@@ -1,6 +1,6 @@
 (function () {
 	"use strict";
-	var mdns = require("mdns2"),
+	var mdns = require("mdns"),
 		mdns_wrapper,
 		util = require("util"),
 		url = require("url"),
@@ -34,7 +34,6 @@
 			var _protocol = protocol || "http";
 			browser = mdns.createBrowser(mdns.tcp(_protocol));
 			browser.on("serviceUp", function (service) {
-				console.log("up: %j", service);
 				var address = check_address(service);
 				if (typeof address !== "undefined" &&
 						typeof service.txtRecord !== "undefined") {
@@ -47,8 +46,6 @@
 				}
 			});
 			browser.on("serviceDown", function (service) {
-				console.log("serviceDown");
-				console.log(service);
 				self.emit("down", service);
 			});
 		};
