@@ -34,7 +34,7 @@
 	util.inherits(DiscoveryProvider, events.EventEmitter);
 
 	exports.createDefaultProvider = function () {
-		return require("./mdns_provider").createDiscoveryProvider();
+		return require("./polo_provider").createDiscoveryProvider();
 	};
 
 })();
